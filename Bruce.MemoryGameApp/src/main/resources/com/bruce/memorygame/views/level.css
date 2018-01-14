@@ -1,0 +1,8 @@
+.view {
+
+}
+
+#labelLevelName{
+    -fx-font: 30px "Serif";
+    -fx-font-weight : "bold";
+}

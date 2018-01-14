@@ -23,8 +23,8 @@ public class PrimaryPresenter {
                 appBar.setNavIcon(MaterialDesignIcon.MENU.button(e -> 
                         MobileApplication.getInstance().showLayer(MemoryGame.MENU_LAYER)));
                 appBar.setTitleText("Primary");
-                appBar.getActionItems().add(MaterialDesignIcon.SEARCH.button(e -> 
-                        System.out.println("Search")));
+//                appBar.getActionItems().add(MaterialDesignIcon.SEARCH.button(e -> 
+//                        System.out.println("Search")));
             }
         });
     }

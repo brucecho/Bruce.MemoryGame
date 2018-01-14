@@ -1,5 +1,6 @@
 package com.bruce.memorygame;
 
+import static com.bruce.memorygame.MemoryGame.LEVEL1_VIEW;
 import com.gluonhq.charm.down.Platform;
 import com.gluonhq.charm.down.Services;
 import com.gluonhq.charm.down.plugins.LifecycleService;
@@ -30,7 +31,8 @@ public class DrawerManager {
         
         final Item primaryItem = new ViewItem("Primary", MaterialDesignIcon.HOME.graphic(), PRIMARY_VIEW, ViewStackPolicy.SKIP);
         final Item secondaryItem = new ViewItem("Secondary", MaterialDesignIcon.DASHBOARD.graphic(), SECONDARY_VIEW);
-        drawer.getItems().addAll(primaryItem, secondaryItem);
+        final Item level1Item = new ViewItem("Start Game", MaterialDesignIcon.DASHBOARD.graphic(), LEVEL1_VIEW);
+        drawer.getItems().addAll(primaryItem, secondaryItem,level1Item);
         
         if (Platform.isDesktop()) {
             final Item quitItem = new Item("Quit", MaterialDesignIcon.EXIT_TO_APP.graphic());
