@@ -26,6 +26,23 @@ public class MemoryGame extends MobileApplication {
     public static final Image imageG = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-g-icon.png"));
     public static final Image imageH = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-h-icon.png"));
     public static final Image imageI = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-i-icon.png"));
+    public static final Image imageJ = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-j-icon.png"));
+    public static final Image imageK = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-k-icon.png"));
+    public static final Image imageL = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-l-icon.png"));
+    public static final Image imageM = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-m-icon.png"));
+    public static final Image imageN = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-n-icon.png"));
+    public static final Image imageO = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-o-icon.png"));
+    public static final Image imageP = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-p-icon.png"));
+    public static final Image imageQ = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-q-icon.png"));
+    public static final Image imageR = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-r-icon.png"));
+    public static final Image imageS = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-s-icon.png"));
+    public static final Image imageT = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-t-icon.png"));
+    public static final Image imageU = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-u-icon.png"));
+    public static final Image imageV = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-v-icon.png"));
+    public static final Image imageW = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-w-icon.png"));
+    public static final Image imageX = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-x-icon.png"));
+    public static final Image imageY = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-y-icon.png"));
+    public static final Image imageZ = new Image(MemoryGame.class.getResourceAsStream("/com/bruce/memorygame/picture/Letter-z-icon.png"));
     
     @Override
     public void init() {
