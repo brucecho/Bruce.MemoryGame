@@ -20,6 +20,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.transform.Rotate;
 
 /**
  * FXML Controller class
@@ -75,6 +76,26 @@ public class Level1Presenter implements Initializable {
         imageviewPicture2.setImage(getImage(alShowLetter.get(1).toString()));
         imageviewPicture3.setImage(getImage(alShowLetter.get(2).toString()));
         imageviewPicture4.setImage(getImage(alShowLetter.get(3).toString()));
+
+        Rotate rotationTransform1 = new Rotate(180);
+        rotationTransform1.setAxis(Rotate.Y_AXIS);
+        rotationTransform1.setPivotX(imageviewPicture1.getBoundsInLocal().getWidth()/2);
+        imageviewPicture1.getTransforms().add(rotationTransform1);
+        
+        Rotate rotationTransform2 = new Rotate(180);
+        rotationTransform2.setAxis(Rotate.Y_AXIS);
+        rotationTransform2.setPivotX(imageviewPicture2.getBoundsInLocal().getWidth()/2);
+        imageviewPicture2.getTransforms().add(rotationTransform2);
+        
+        Rotate rotationTransform3 = new Rotate(180);
+        rotationTransform3.setAxis(Rotate.Y_AXIS);
+        rotationTransform3.setPivotX(imageviewPicture3.getBoundsInLocal().getWidth()/2);
+        imageviewPicture3.getTransforms().add(rotationTransform3);
+        
+        Rotate rotationTransform4 = new Rotate(180);
+        rotationTransform4.setAxis(Rotate.Y_AXIS);
+        rotationTransform4.setPivotX(imageviewPicture4.getBoundsInLocal().getWidth()/2);
+        imageviewPicture4.getTransforms().add(rotationTransform4);
     }
 
     private Image getImage(String strLetter) {
