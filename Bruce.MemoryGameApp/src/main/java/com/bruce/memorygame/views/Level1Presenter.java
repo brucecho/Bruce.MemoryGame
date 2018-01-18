@@ -79,23 +79,38 @@ public class Level1Presenter implements Initializable {
 
         Rotate rotationTransform1 = new Rotate(180);
         rotationTransform1.setAxis(Rotate.Y_AXIS);
-        rotationTransform1.setPivotX(imageviewPicture1.getBoundsInLocal().getWidth()/2);
+        rotationTransform1.setPivotX(imageviewPicture1.getBoundsInLocal().getWidth() / 2);
         imageviewPicture1.getTransforms().add(rotationTransform1);
-        
+
         Rotate rotationTransform2 = new Rotate(180);
         rotationTransform2.setAxis(Rotate.Y_AXIS);
-        rotationTransform2.setPivotX(imageviewPicture2.getBoundsInLocal().getWidth()/2);
+        rotationTransform2.setPivotX(imageviewPicture2.getBoundsInLocal().getWidth() / 2);
         imageviewPicture2.getTransforms().add(rotationTransform2);
-        
+
         Rotate rotationTransform3 = new Rotate(180);
         rotationTransform3.setAxis(Rotate.Y_AXIS);
-        rotationTransform3.setPivotX(imageviewPicture3.getBoundsInLocal().getWidth()/2);
+        rotationTransform3.setPivotX(imageviewPicture3.getBoundsInLocal().getWidth() / 2);
         imageviewPicture3.getTransforms().add(rotationTransform3);
-        
+
         Rotate rotationTransform4 = new Rotate(180);
         rotationTransform4.setAxis(Rotate.Y_AXIS);
-        rotationTransform4.setPivotX(imageviewPicture4.getBoundsInLocal().getWidth()/2);
+        rotationTransform4.setPivotX(imageviewPicture4.getBoundsInLocal().getWidth() / 2);
         imageviewPicture4.getTransforms().add(rotationTransform4);
+        
+        setStatus("初始");
+    }
+
+    private void setStatus(String strStatusName) {
+        switch(strStatusName){
+            case "初始":
+                this.imageviewPicture1.setVisible(false);
+                this.imageviewPicture2.setVisible(false);
+                this.imageviewPicture3.setVisible(false);
+                this.imageviewPicture4.setVisible(false);
+                break;
+            case "":
+                break;
+        }
     }
 
     private Image getImage(String strLetter) {
