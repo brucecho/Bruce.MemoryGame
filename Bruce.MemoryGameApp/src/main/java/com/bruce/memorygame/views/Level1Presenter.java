@@ -44,6 +44,8 @@ public class Level1Presenter implements Initializable {
     @FXML
     private Label labelMessage;
     @FXML
+    private Label labelTimer;
+    @FXML
     private Button buttonStart;
     @FXML
     private Button buttonContinue;
@@ -103,10 +105,18 @@ public class Level1Presenter implements Initializable {
     private void setStatus(String strStatusName) {
         switch(strStatusName){
             case "初始":
+                //Picture
                 this.imageviewPicture1.setVisible(false);
                 this.imageviewPicture2.setVisible(false);
                 this.imageviewPicture3.setVisible(false);
                 this.imageviewPicture4.setVisible(false);
+                //Label
+                this.labelMessage.setVisible(false);
+                this.labelTimer.setVisible(false);
+                //Button
+                this.buttonStart.setVisible(true);
+                this.buttonContinue.setVisible(false);
+                this.buttonTryagain.setVisible(false);
                 break;
             case "":
                 break;

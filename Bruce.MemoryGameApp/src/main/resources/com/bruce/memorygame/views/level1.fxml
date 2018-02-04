@@ -39,11 +39,12 @@
             <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
                   <Label fx:id="labelMessage" text="Label" />
+                  <Label fx:id="labelTimer" text="Label" />
                   <StackPane prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="buttonStart" mnemonicParsing="false" text="開始" />
-                        <Button fx:id="buttonContinue" mnemonicParsing="false" text="下一關" />
-                        <Button fx:id="buttonTryagain" mnemonicParsing="false" text="再試一次" />
+                        <Button fx:id="buttonStart" mnemonicParsing="false" text="LOOK" />
+                        <Button fx:id="buttonContinue" mnemonicParsing="false" text="CONTINUE" />
+                        <Button fx:id="buttonTryagain" mnemonicParsing="false" text="TRY AGAIN" />
                      </children>
                   </StackPane>
                </children>
