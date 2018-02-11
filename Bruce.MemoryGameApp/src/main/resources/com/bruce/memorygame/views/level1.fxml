@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<View fx:id="viewContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350" stylesheets="@level.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bruce.memorygame.views.Level1Presenter">
+<View fx:id="viewContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350" stylesheets="@level.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bruce.memorygame.views.Level1Presenter">
    <center>
       <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
          <children>
@@ -42,7 +42,7 @@
                   <Label fx:id="labelTimer" text="Label" />
                   <StackPane prefHeight="150.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="buttonStart" mnemonicParsing="false" text="LOOK" />
+                        <Button fx:id="buttonLook" mnemonicParsing="false" onAction="#buttonLook_click" text="LOOK" />
                         <Button fx:id="buttonContinue" mnemonicParsing="false" text="CONTINUE" />
                         <Button fx:id="buttonTryagain" mnemonicParsing="false" text="TRY AGAIN" />
                      </children>

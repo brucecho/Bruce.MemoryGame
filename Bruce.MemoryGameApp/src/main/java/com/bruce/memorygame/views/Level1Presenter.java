@@ -14,6 +14,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -46,7 +47,7 @@ public class Level1Presenter implements Initializable {
     @FXML
     private Label labelTimer;
     @FXML
-    private Button buttonStart;
+    private Button buttonLook;
     @FXML
     private Button buttonContinue;
     @FXML
@@ -99,12 +100,12 @@ public class Level1Presenter implements Initializable {
         rotationTransform4.setPivotX(imageviewPicture4.getBoundsInLocal().getWidth() / 2);
         imageviewPicture4.getTransforms().add(rotationTransform4);
         
-        setStatus("初始");
+        setStatus("init");
     }
 
     private void setStatus(String strStatusName) {
         switch(strStatusName){
-            case "初始":
+            case "init":
                 //Picture
                 this.imageviewPicture1.setVisible(false);
                 this.imageviewPicture2.setVisible(false);
@@ -114,11 +115,23 @@ public class Level1Presenter implements Initializable {
                 this.labelMessage.setVisible(false);
                 this.labelTimer.setVisible(false);
                 //Button
-                this.buttonStart.setVisible(true);
+                this.buttonLook.setVisible(true);
                 this.buttonContinue.setVisible(false);
                 this.buttonTryagain.setVisible(false);
                 break;
-            case "":
+            case "look":
+                //Picture
+                this.imageviewPicture1.setVisible(true);
+                this.imageviewPicture2.setVisible(true);
+                this.imageviewPicture3.setVisible(true);
+                this.imageviewPicture4.setVisible(true);
+                //Label
+                this.labelMessage.setVisible(false);
+                this.labelTimer.setVisible(false);
+                //Button
+                this.buttonLook.setVisible(true);
+                this.buttonContinue.setVisible(false);
+                this.buttonTryagain.setVisible(false);
                 break;
         }
     }
@@ -178,5 +191,11 @@ public class Level1Presenter implements Initializable {
             return MemoryGame.imageZ;
         }
         return null;
+    }
+    @FXML
+    private void buttonLook_click(ActionEvent event)
+    {
+        //imageviewPicture1.getc
+        setStatus("look");
     }
 }
